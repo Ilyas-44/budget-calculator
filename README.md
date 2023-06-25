@@ -1,71 +1,40 @@
-# Getting Started with Create React App
+# Titre : Budget Calculator - une application React.js pour gérer les dépenses
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Explication de l'application :
 
-## Available Scripts
+L'application "Budget Calculator" est une application simple qui permet aux utilisateurs de gérer leurs dépenses. Elle est développée en utilisant la bibliothèque React.js, qui est populaire pour la création d'interfaces utilisateur interactives et réactives.
 
-In the project directory, you can run:
+La fonction principale de l'application est de permettre aux utilisateurs d'ajouter, de modifier et de supprimer des éléments de dépenses, ainsi que de calculer le total des dépenses. L'application est composée de plusieurs composants React qui travaillent ensemble pour fournir une interface utilisateur conviviale.
 
-### `npm start`
+## Composants principaux de l'application :
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. `ExpenseForm` : Ce composant est responsable de la saisie des détails de la dépense, tels que le nom de la dépense et le montant. Il contient un formulaire où les utilisateurs peuvent entrer ces informations et les soumettre.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. `ExpenseList` : Ce composant affiche la liste des dépenses ajoutées. Il reçoit les données des dépenses sous forme de tableau et les affiche sous forme de liste. Chaque élément de la liste comprend le nom de la dépense, le montant et des boutons pour éditer ou supprimer l'élément.
 
-### `npm test`
+3. `Alert` : Ce composant est utilisé pour afficher des messages d'alerte à l'utilisateur. Il peut afficher différents types d'alertes, tels que des succès, des erreurs, etc.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Fonctionnalités principales de l'application :
 
-### `npm run build`
+- Ajout d'une dépense : Les utilisateurs peuvent entrer le nom de la dépense et le montant correspondant dans le formulaire. Une fois soumis, la dépense est ajoutée à la liste des dépenses.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Modification d'une dépense : Les utilisateurs peuvent modifier une dépense existante en cliquant sur le bouton "Modifier" correspondant à cette dépense dans la liste. Les détails de la dépense sélectionnée sont pré-remplis dans le formulaire, permettant aux utilisateurs de les modifier. Une fois les modifications apportées, les données sont mises à jour dans la liste.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Suppression d'une dépense : Les utilisateurs peuvent supprimer une dépense en cliquant sur le bouton "Supprimer" correspondant à cette dépense dans la liste. Une fois supprimée, la dépense est retirée de la liste.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Calcul du total des dépenses : Le total des dépenses est affiché en haut de la page. Il est calculé en additionnant tous les montants des dépenses dans la liste.
 
-### `npm run eject`
+- Gestion des alertes : L'application affiche des messages d'alerte pour informer les utilisateurs des actions réussies ou des erreurs. Les alertes sont affichées pendant une courte période de temps avant de disparaître.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Stockage des données : Les dépenses sont stockées localement en utilisant l'API `localStorage`. Cela permet de conserver les données même si l'utilisateur recharge la page ou quitte l'application.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+L'application utilise également la bibliothèque `uuid` pour générer des identifiants uniques pour chaque dépense ajoutée.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+En résumé, l'application "Budget Calculator" est une application simple mais utile pour gérer les dépenses. Elle offre des fonctionnalités d'ajout, de modification et de suppression de dépenses, ainsi que le calcul du total des dépenses. Elle est développ
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+ée en utilisant React.js, ce qui permet une expérience utilisateur réactive et interactive.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![Capture d’écran 2023-06-25 à 17 35 36](https://github.com/Ilyas-44/budget-calculator/assets/117936276/0044dd99-801d-4cd7-97cd-0742c99b0dd8)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# budget-calculator
